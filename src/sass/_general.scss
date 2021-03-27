@@ -6,3 +6,111 @@ button {
       outline: none;
    }
 }
+.button {
+   border-radius: 5px;
+   background-color: $main-color;
+   width: 150px;
+   height: 30px;
+   border: none;
+   color: #fff;
+   font-size: 12px;
+   &_promo {
+      width: 300px;
+      height: 50px;
+      margin: 65px 0 15px;
+      font-size: 16px;
+      display: block;
+   }
+}
+
+.promo {
+   min-height: 650px;
+   background: url(../img/promo/promo-bg.jpg);
+   color: #fff;
+   padding-top: 19px;
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo {
+   width: 255px;
+   img {
+      width: 100%;
+   }
+}
+.official {
+   font-size: 12px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   span {
+      display: block;
+
+      font-weight: 700;
+      font-size: 18px;
+   }
+}
+.tel {
+   font-weight: 700;
+   font-size: 18px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   a {
+      color: #fff;
+   }
+}
+.promo__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   & > div:last-child {
+      text-align: end;
+      span {
+         margin-right: 5px;
+      }
+      a {
+         color: #fff;
+         text-decoration: underline;
+         text-transform: uppercase;
+         transition: all 0.5s;
+         &:hover {
+            color: $main-color;
+         }
+      }
+   }
+}
+.promo__header {
+   margin-top: 75px;
+   h1 {
+      font-size: 42px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+   h2 {
+      font-size: 24px;
+
+      text-transform: uppercase;
+      margin-bottom: 65px;
+   }
+}
+.icons {
+   display: flex;
+   justify-content: space-between;
+   width: 430px;
+   margin-right: 17px;
+}
+.icon {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 110px;
+   font-size: 14px;
+   text-align: center;
+   img {
+      width: 42px;
+      height: 46px;
+   }
+}
