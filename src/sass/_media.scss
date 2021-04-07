@@ -1,11 +1,172 @@
+@media (max-width: 1399px) {
+}
 @media (max-width: 1199px) {
+   .container {
+      max-width: 910px;
+   }
 }
 @media (max-width: 991px) {
+   header {
+      justify-content: space-around;
+   }
+   .logo {
+      width: 235px;
+   }
+   .official {
+      span {
+         font-size: 16px;
+      }
+   }
+   .tel {
+      font-size: 15px;
+   }
+   .promo {
+      min-height: 610px;
+   }
+   .promo__wrapper {
+      align-items: center;
+      & > div:last-child {
+         text-align: center;
+      }
+   }
+   .promo__header {
+      margin-top: 60px;
+      h2 {
+         margin-bottom: 50px;
+      }
+   }
+   .icons {
+      margin-right: 0;
+   }
+   .title_left {
+      text-align: center;
+      font-size: 30px;
+   }
+   .consultation__descr {
+      margin: 36px 0 20px;
+      text-align: center;
+   }
+   .feed-form {
+      margin: 0 auto;
+   }
+   .slider {
+      &-block {
+         max-width: 550px;
+      }
+   }
 }
 
 @media (max-width: 767px) {
+   .logo {
+      width: 200px;
+   }
+   .official {
+      font-size: 11px;
+      span {
+         font-size: 15px;
+      }
+   }
+   .tel {
+      align-items: center;
+      font-size: 13px;
+      button {
+         width: 137px;
+         height: 25px;
+         font-size: 11px;
+      }
+   }
+   .promo {
+      min-height: 560px;
+   }
+   .promo__header {
+      margin-top: 50px;
+      h1 {
+         font-size: 36px;
+      }
+      h2 {
+         margin-bottom: 35px;
+         font-size: 20px;
+      }
+   }
+   .advantages {
+      &__wrapper {
+         flex-direction: column;
+         align-items: center;
+      }
+      &-block {
+         width: 90%;
+         margin-bottom: 25px;
+         &:last-child {
+            margin-bottom: 0px;
+         }
+         &__icon {
+            margin-bottom: 5px;
+         }
+      }
+   }
+   .consultation {
+      min-height: 620px;
+      padding: 60px 0 0;
+   }
+   .slider {
+      &-block {
+         max-width: 550px;
+      }
+   }
 }
 @media (max-width: 575px) {
+   header {
+      flex-direction: column;
+      min-height: 120px;
+   }
+   .logo {
+      width: 255px;
+   }
+   .official {
+      font-size: 16px;
+      span {
+         font-size: 19px;
+      }
+   }
+   .tel {
+      display: none;
+   }
+   .promo {
+      &__header {
+         margin-top: 20px;
+         text-align: center;
+      }
+      h1 {
+         font-size: 25px;
+      }
+      h2 {
+         margin-bottom: 35px;
+         font-size: 13px;
+      }
+   }
+   .icons {
+      width: 315px;
+      .icon {
+         width: 105px;
+         font-size: 13px;
+      }
+   }
+   .consultation {
+      min-height: 610px;
+      padding-top: 50px;
+      &__descr {
+         font-size: 14px;
+         // display: none;
+      }
+   }
+   .title_left {
+      font-size: 20px;
+   }
+   .slider {
+      &-block {
+         max-width: 315px;
+      }
+   }
 }
 
 // @media (min-width: 1400px) {

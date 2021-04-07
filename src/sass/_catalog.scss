@@ -1,0 +1,33 @@
+.catalog {
+}
+.container {
+}
+.title {
+}
+.catalog-tabs {
+   display: flex;
+   justify-content: center;
+}
+.catalog-tab {
+   width: 220px;
+   height: 50px;
+   border: 2px solid rgb(208, 208, 208);
+   font-size: 18px;
+   color: rgb(107, 107, 107);
+   text-transform: uppercase;
+   line-height: 48px;
+   text-align: center;
+   transform: skewX(-25deg);
+   margin: 0 5px;
+   &:hover {
+      box-shadow: 0 0 15px $main-color;
+      border: none;
+   }
+   div {
+      transform: skewX(25deg);
+   }
+}
+.catalog-tab_active {
+   background-color: $main-color;
+   color: #fff;
+}

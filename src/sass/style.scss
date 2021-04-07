@@ -6,8 +6,17 @@
    max-width: 950px;
    margin: 0 auto;
 }
+main {
+   padding-bottom: 400px;
+}
 
 @import "variables";
 @import "mixins";
+@import "buttons";
 @import "general";
+@import "advantages";
+@import "consultation";
+@import "forms";
+@import "slider";
+@import "catalog";
 @import "media";

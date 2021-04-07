@@ -26,6 +26,11 @@
    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"> -->
 
+
+   <!-- carusel -plugin   -->
+   <link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+
    <!-- CSS -->
    <link rel="stylesheet" href="css/style.min.css">
 
@@ -51,7 +56,7 @@
          <div class="promo__wrapper">
             <div class="promo__header">
                <h1>Подбор пульсометра</h1>
-               <h2>с учётом Вашего уровня подготовки</h2>
+               <h3>с учётом Вашего уровня подготовки</h3>
             </div>
             <div class="icons">
                <div class="icon">
@@ -84,10 +89,105 @@
 
    </section>
    <main>
-      <section class="tab"></section>
-      <section class="reasons"></section>
+      <section class="advantages">
+         <div class="container">
+            <h3 class="title">НАШИ ПРЕИМУЩЕСТВА</h3>
+            <div class="advantages__wrapper">
+               <div class="advantages-block">
+                  <div class="advantages-block__icon">
+                     <img src="img/advantages/cup.png" alt="cup">
+                  </div>
+                  <div class="advantages-block__title">
+                     Делимся опытом
+                  </div>
+                  <div class="advantages-block__descr">
+                     Наши сотрудники всегда готовы поделиться своим опытом,
+                     так как сами бегают полумарафоны, переплыли Босфор,
+                     готовятся к соревнованиям по триатлону!
+                  </div>
+               </div>
+               <div class="advantages-block">
+                  <div class="advantages-block__icon">
+                     <img src="img/advantages/heart.png" alt="cup">
+                  </div>
+                  <div class="advantages-block__title">
+                     Заботимся о здоровье
+                  </div>
+                  <div class="advantages-block__descr">
+                     Мы работаем для того,
+                     чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+                  </div>
+               </div>
+               <div class="advantages-block">
+                  <div class="advantages-block__icon">
+                     <img src="img/advantages/cup.png" alt="cup">
+                  </div>
+                  <div class="advantages-block__title">
+                     Учим бегать
+                  </div>
+                  <div class="advantages-block__descr">
+                     Помогаем с обучением
+                     правильной технике бега!
+                     Дружим с крупнейшей школой бега в России - <span>I LOVE RUNNING.</span>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+      <section class="consultation">
+         <div class="container">
+            <h3 class="title title_left">Получите бесплатную консультацию <br>
+               по подбору пульсометра </h3>
+            <div class="consultation__descr">
+               Просто заполните форму заявки <br>
+               и мы перезвоним вам в течении 10 минут
+            </div>
+            <form action="#" class="feed-form">
+               <input name="name" type="text" placeholder="Ваше имя">
+               <input name="tel" type="number" placeholder="Ваш телефон">
+               <input name="email" type="email" placeholder="Ваш E-mail">
+               <button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+            </form>
+         </div>
+      </section>
+      <section class="slider">
+         <div class="container">
+            <div class="slider-block">
+               <div><img src="img/slider/slider1.jpg" alt="#"></div>
+               <div><img src="img/slider/slider2.jpg" alt="#"></div>
+               <div><img src="img/slider/slider3.jpg" alt="#"></div>
+
+            </div>
+         </div>
+      </section>
+      <section class="catalog">
+         <div class="container">
+            <h3 class="title">КАТАЛОГ ПУЛЬСОМЕТРОВ</h3>
+            <div class="catalog-tabs">
+               <div class="catalog-tab catalog-tab_active">
+                  <div> ДЛЯ ФИТНЕСА</div>
+               </div>
+               <div class="catalog-tab">
+                  <div>ДЛЯ БЕГА</div>
+               </div>
+               <div class="catalog-tab">
+                  <div>ДЛЯ ТРИАТЛОНА</div>
+               </div>
+            </div>
+         </div>
+      </section>
    </main>
    <footer></footer>
+
+   <!-- carusel -plagin JS -->
+   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/slick.min.js"></script>
+
+
+   <script src="js/main.js"></script>
 </body>
 
 </html>

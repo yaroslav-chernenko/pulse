@@ -1,31 +1,10 @@
 a:link {
    text-decoration: none;
 }
-button {
-   &:focus {
-      outline: none;
-   }
-}
-.button {
-   border-radius: 5px;
-   background-color: $main-color;
-   width: 150px;
-   height: 30px;
-   border: none;
-   color: #fff;
-   font-size: 12px;
-   &_promo {
-      width: 300px;
-      height: 50px;
-      margin: 65px 0 15px;
-      font-size: 16px;
-      display: block;
-   }
-}
 
 .promo {
    min-height: 650px;
-   background: url(../img/promo/promo-bg.jpg);
+   background: url(../img/promo/promo-bg.jpg) center (center/cover) no-repeat;
    color: #fff;
    padding-top: 19px;
 }
