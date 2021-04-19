@@ -6,6 +6,12 @@
    max-width: 950px;
    margin: 0 auto;
 }
+.title {
+   text-align: center;
+   font-weight: 700;
+   font-size: 30px;
+   text-transform: uppercase;
+}
 main {
    padding-bottom: 400px;
 }
@@ -19,4 +25,5 @@ main {
 @import "forms";
 @import "slider";
 @import "catalog";
+@import "reviews";
 @import "media";
