@@ -50,7 +50,7 @@
             </div>
             <div class="tel">
                <a href="tel:+74999228974">+7 (499) 922-89-74</a>
-               <button class="button">ЗАКАЗАТЬ ЗВОНОК</button>
+               <button data-modal="consultation" class="button">ЗАКАЗАТЬ ЗВОНОК</button>
             </div>
          </header>
          <div class="promo__wrapper">
@@ -77,7 +77,7 @@
                </div>
             </div>
             <div>
-               <button class="button button_promo">
+               <button data-modal="consultation" class="button button_promo">
                   ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
                </button>
                <span>или</span>
@@ -523,7 +523,63 @@
          </div>
       </section>
    </main>
-   <footer></footer>
+   <footer class="footer">
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.304834250626!2d37.64352155942449!3d55.77057736321365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a63664af129%3A0x32043f062d12723a!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDMg0YHRgtGA0L7QtdC90LjQtSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA3MDc4!5e0!3m2!1sru!2sua!4v1618929900713!5m2!1sru!2sua"
+         class="footer-map" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+      <div class="address">
+         <address>Москва, Мясницкий проезд, д.3с1</address>
+         <a href="tel: 84999228974" class="address__tel">8 (499) 922-89-74</a>
+         <div class="address-social">
+            <a href="#" class="address-social__item">
+               <img src="img/footer/facebook.svg" alt="facebook">
+            </a>
+            <a href="#" class="address-social__item">
+               <img src="img/footer/instagram.svg" alt="instagram">
+            </a>
+            <a href="#" class="address-social__item">
+               <img src="img/footer/pinterest.svg" alt="pinterest">
+            </a>
+         </div>
+      </div>
+   </footer>
+
+   <!-- --------- modal ----------- -->
+
+   <div class="overlay">
+      <div class="modal" id="consultation">
+         <div class="modal__close">&times;</div>
+         <h3 class="modal__subtitle">Просто заполните форму заявки
+         </h3>
+         <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+         <form action="#" class="feed-form">
+            <input name="name" type="text" placeholder="Ваше имя">
+            <input name="tel" type="number" placeholder="Ваш телефон">
+            <input name="email" type="email" placeholder="Ваш E-mail">
+            <button class="button button_submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+         </form>
+      </div>
+
+      <div class="modal" id="order">
+         <div class="modal__close">&times;</div>
+         <h3 class="modal__subtitle">Ваш заказ:</h3>
+         <div class="modal__descr">Пульсометр Polar FT1</div>
+         <form action="#" class="feed-form">
+            <input name="name" type="text" placeholder="Ваше имя">
+            <input name="tel" type="number" placeholder="Ваш телефон">
+            <input name="email" type="email" placeholder="Ваш E-mail">
+            <button class="button button_submit">купить</button>
+         </form>
+      </div>
+
+      <div class="modal modal_mini" id="succsess">
+         <div class="modal__close">&times;</div>
+         <h3 class="modal__subtitle">Спасибо за вашу заявку!</h3>
+         <div class="modal__descr">Наш менеджер свяжется с вами
+            в ближайшее время!</div>
+      </div>
+   </div>
 
    <!-- carusel -plagin JS -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -535,110 +591,3 @@
 </body>
 
 </html>
-
-
-<!-- <section class="catalog">
-   <div class="container">
-      <h3 class="title">КАТАЛОГ ПУЛЬСОМЕТРОВ</h3>
-      <div class="catalog-tabs">
-         <div class="catalog-tab catalog-tab_active">
-            <div> ДЛЯ ФИТНЕСА</div>
-         </div>
-         <div class="catalog-tab">
-            <div>ДЛЯ БЕГА</div>
-         </div>
-         <div class="catalog-tab">
-            <div>ДЛЯ ТРИАТЛОНА</div>
-         </div>
-      </div>
-      <div class="catalog-content">
-         <div class="catalog-content__item">
-            <div class="catalog-content__wrapper">
-               <div class="catalog-content__face catalog-content__face_active">
-                  <img src="img/catalog/whatch-img.jpg" alt="pulsometr" class="catalog-content__img">
-                  <div class="catalog-content__title">
-                     Пульсометр Polar FT1
-                  </div>
-                  <div class="catalog-content__descr">
-                     Для первых шагов в тренировках, основанных на сердечном ритме
-                  </div>
-                  <a href="#" class="catalog-content__link">ПОДРОБНЕЕ</a>
-               </div>
-               <ul class="catalog-content__list">
-                  <li>Для первых шагов в тренировках, основанных на </li>
-                  <li>Для первых шагов в тренировках, основанных на сердечном ритме</li>
-                  <li>Для первых шагов в тренировках, основанных на </li>
-                  <li>Для первых шагов в тренировках, основанных на сердечном ритме</li>
-               </ul>
-            </div>
-            <hr>
-            <div class="catalog-content__footer">
-               <div class="catalog-content__prices">
-                  <div class="catalog-content__old-price">4 750 руб.</div>
-                  <div class="catalog-content__price">4 500 руб.</div>
-               </div>
-               <button class="button button_catalog">КУПИТЬ</button>
-            </div>
-         </div>
-         <div class="catalog-content__item">
-            <div class="catalog-content__wrapper">
-               <div class="catalog-content__face catalog-content__face_active">
-                  <img src="img/catalog/whatch-img.jpg" alt="pulsometr" class="catalog-content__img">
-                  <div class="catalog-content__title">
-                     Пульсометр Polar FT1
-                  </div>
-                  <div class="catalog-content__descr">
-                     Для первых шагов в тренировках, основанных на сердечном ритме
-                  </div>
-                  <a href="#" class="catalog-content__link">ПОДРОБНЕЕ</a>
-               </div>
-               <ul class="catalog-content__list">
-                  <li>Для первых шагов в тренировках, основанных на </li>
-                  <li>Для первых шагов в тренировках, основанных на сердечном ритме</li>
-                  <li>Для первых шагов в тренировках, основанных на </li>
-                  <li>Для первых шагов в тренировках, основанных на сердечном ритме</li>
-               </ul>
-            </div>
-            <hr>
-            <div class="catalog-content__footer">
-               <div class="catalog-content__prices">
-                  <div class="catalog-content__old-price">4 750 руб.</div>
-                  <div class="catalog-content__price">4 500 руб.</div>
-               </div>
-               <button class="button button_catalog">КУПИТЬ</button>
-            </div>
-         </div>
-         <div class="catalog-content__item">
-            <div class="catalog-content__wrapper">
-               <div class="catalog-content__face catalog-content__face_active">
-                  <img src="img/catalog/whatch-img.jpg" alt="pulsometr" class="catalog-content__img">
-                  <div class="catalog-content__title">
-                     Пульсометр Polar FT1
-                  </div>
-                  <div class="catalog-content__descr">
-                     Для первых шагов в тренировках, основанных на сердечном ритме
-                  </div>
-                  <a href="#" class="catalog-content__link">ПОДРОБНЕЕ</a>
-               </div>
-               <ul class="catalog-content__list">
-                  <li>Для первых шагов в тренировках, основанных на </li>
-                  <li>Для первых шагов в тренировках, основанных на сердечном ритме</li>
-                  <li>Для первых шагов в тренировках, основанных на </li>
-                  <li>Для первых шагов в тренировках, основанных на сердечном ритме</li>
-               </ul>
-            </div>
-            <hr>
-            <div class="catalog-content__footer">
-               <div class="catalog-content__prices">
-                  <div class="catalog-content__old-price">4 750 руб.</div>
-                  <div class="catalog-content__price">4 500 руб.</div>
-               </div>
-               <button class="button button_catalog">КУПИТЬ</button>
-            </div>
-         </div>
-
-      </div>
-      <div class="catalog-content"></div>
-      <div class="catalog-content"></div>
-   </div>
-</section> -->

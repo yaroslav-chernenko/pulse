@@ -12,9 +12,6 @@
    font-size: 30px;
    text-transform: uppercase;
 }
-main {
-   padding-bottom: 400px;
-}
 
 @import "variables";
 @import "mixins";
@@ -26,4 +23,6 @@ main {
 @import "slider";
 @import "catalog";
 @import "reviews";
+@import "footer";
+@import "modal";
 @import "media";
